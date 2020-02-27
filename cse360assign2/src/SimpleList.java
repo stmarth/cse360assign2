@@ -44,9 +44,7 @@ public class SimpleList
 	/* Return the list as a String. The elements must be separated by a space. This 
 	 * means there is not space after the last integer.*/
 	public String toString()
-
 	{
-		
 		String listString = "";
 		for(int index = 0; index < this.count; index++)
 		{
@@ -58,7 +56,6 @@ public class SimpleList
 		}
 		return listString;
 	}
-	
 	
 	/*Return the location of the parameter in the list. If the parameter is not
 	in the list, then return -1*/
