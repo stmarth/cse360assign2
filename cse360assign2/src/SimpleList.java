@@ -25,6 +25,27 @@ public class SimpleList
 		this.count += 1; 
 	}
 	
+	/*
+	 * The append method should append the parameter to the end of the list.  If the list 
+	 * was full, then increase the size by 50% so there will be room.  Increment the count. */
+	public void append(int num)
+	{
+		this.list.add(num);
+		this.count += 1;
+	}
+	
+	//Return the first element in the list 
+	public int first()
+	{
+		return this.list.get(0);
+	}
+	
+	//Return the current number of possible locations in the list 
+	public int size()
+	{
+		return this.list.size();
+	}
+	
 	/* If the parameter is in the list, then remove it. The other values in the list 
 	 * may need to be moved down. Adjust the count as needed.*/
 	public void remove(int num)
@@ -46,7 +67,6 @@ public class SimpleList
 	/* Return the list as a String. The elements must be separated by a space. This 
 	 * means there is not space after the last integer.*/
 	public String toString()
-
 	{
 		
 		String listString = "";
@@ -60,7 +80,6 @@ public class SimpleList
 		}
 		return listString;
 	}
-	
 	
 	/*Return the location of the parameter in the list. If the parameter is not
 	in the list, then return -1*/
