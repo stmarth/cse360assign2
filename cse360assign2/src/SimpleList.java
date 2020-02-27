@@ -3,8 +3,6 @@ import java.util.ArrayList;
 public class SimpleList
 {
 
-	
-	
 	//declare variables here
 	int count;
 	ArrayList<Integer> list;
