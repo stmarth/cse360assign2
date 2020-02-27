@@ -4,7 +4,7 @@ public class SimpleList
 	
 //	public static void main(String[] args) {}
 	
-	//this is the 2nd change for testing
+	//this is the 3rd change for test
 	
 	
 	//declare variables here
