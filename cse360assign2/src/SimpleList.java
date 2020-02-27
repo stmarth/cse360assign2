@@ -7,6 +7,8 @@ public class SimpleList
 	int count;
 	ArrayList<Integer> list;
 	
+	
+	
 	//constructor to initialize count to 0, and set array size of list
 	public SimpleList()
 	{
