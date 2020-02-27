@@ -4,6 +4,8 @@ public class SimpleList
 	
 //	public static void main(String[] args) {}
 	
+	//this change is for the tutorial on youtube
+	
 	
 	//declare variables here
 	int count;
