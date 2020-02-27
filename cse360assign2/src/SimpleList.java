@@ -4,7 +4,7 @@ public class SimpleList
 	
 //	public static void main(String[] args) {}
 	
-	//this change is for the tutorial on youtube
+	//this is the 2nd change for testing
 	
 	
 	//declare variables here
