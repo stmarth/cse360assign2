@@ -34,13 +34,25 @@ public class SimpleList
 		this.count += 1;
 	}
 	
-	//Return the first element in the list 
+	//Return the first element in the list. If there are no elements n the list, then return -1.
 	public int first()
 	{
-		return this.list.get(0);
+		if(this.list.get(0) == null)
+			return -1;
+		else
+			return this.list.get(0);
 	}
 	
-	//Return the current number of possible locations in the list 
+	//Return the last element in the list.  If there are no elements n the list, then return -1.
+	public int last()
+	{
+		if(this.list.get(0) == null)
+			return -1;
+		else
+			return this.list.get(this.count - 1);
+	}
+	
+	//Return the current number of possible locations in the list
 	public int size()
 	{
 		return this.list.size();
