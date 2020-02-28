@@ -8,6 +8,49 @@ public class SimpleList
 	ArrayList<Integer> list;
 	
 	
+	/*  TEST CASE BELOW IF NEEDED  */
+//	public static void main(String[] args) {
+//		
+//		SimpleList list2 = new SimpleList();
+//		
+//		System.out.println(list2.size());
+//		list2.add(1);
+//		list2.add(2);
+//		list2.add(3);
+//		list2.add(4);
+//		list2.add(5);
+//		list2.add(6);
+//		System.out.println(list2.size());
+//		System.out.println(list2.toString());
+//		list2.remove(4);
+//		System.out.println(list2.toString());
+//		list2.append(40);
+//		System.out.println(list2.toString());
+//		System.out.println(list2.size());
+//		System.out.println(list2.first());
+//		System.out.println(list2.last());
+//		System.out.println(list2.count);
+//		list2.remove(30);
+//		System.out.println(list2.toString());
+//		System.out.println(list2.search(1));
+//		System.out.println(list2.search(7));
+//		list2.remove(2);
+//		list2.remove(3);
+//		list2.remove(4);
+//		list2.remove(5);
+//		list2.remove(6);
+//		list2.remove(40);
+//		System.out.println(list2.toString());
+//		System.out.println(list2.size());
+//		System.out.println(list2.first());
+//		list2.remove(1);
+//		list2.add(2);
+//		list2.remove(1);
+//		System.out.println(list2.toString());
+//		list2.remove(2);
+//		System.out.println(list2.toString());
+//	}
+	
 	
 	//constructor to initialize count to 0, and set array size of list
 	public SimpleList()
@@ -59,11 +102,12 @@ public class SimpleList
 	}
 	
 	/* If the parameter is in the list, then remove it. The other values in the list 
-	 * may need to be moved down. Adjust the count as needed.*/
+	 * may need to be moved down. Adjust the count as needed. List cannot be reduced to less 
+	 * than 1 entry*/
 	public void remove(int num)
 	{
 		int numSearch = search(num);
-		if(numSearch != -1)
+		if(numSearch != -1 && count > 0)
 		{
 			this.list.remove(numSearch);
 			this.count -= 1;	
